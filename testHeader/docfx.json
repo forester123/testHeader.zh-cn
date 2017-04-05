@@ -7,11 +7,11 @@
         ],
         "exclude": [
           "**/obj/**",
+          "testHeader/**",
           "**/includes/**",
           "README.md",
           "LICENSE",
-          "LICENSE-CODE",
-          "ThirdPartyNotices"
+          "LICENSE-CODE"
         ]
       }
     ],
@@ -19,17 +19,31 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.svg",
+          "**/*.gif"
         ],
         "exclude": [
           "**/obj/**",
-          "**/includes/**"
+          "testHeader/**"
         ]
+      },
+      {
+        "files": [
+          "**/*.png",
+          "**/*.jpg",
+          "**/*.svg",
+          "**/*.gif"
+        ],
+        "src": "../includes",
+        "dest": "includes"
       }
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "searchScope": ["Azure"]
+    },
     "fileMetadata": {},
     "template": [],
     "dest": "testHeader"
